@@ -5,6 +5,7 @@ const router = new Router()
 const bodyParser = require('koa-bodyparser')
 const app = new koa()
 const { initApp } = require('./init/init-app')
+require('./config/database.js')
 require('dotenv').config()
 const port = process.env.PORT || 3000
 app.use(bodyParser())
